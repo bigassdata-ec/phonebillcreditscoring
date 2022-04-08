@@ -2,6 +2,7 @@ import apache_beam as beam
 from apache_beam.options.pipeline_options import (StandardOptions)
 import os
 from .pardos.mypardo import MyPardo
+from apache_beam.dataframe.io import read_csv
 
 pipeline_options = PipelineOptions(
         streaming=streaming, save_main_session=True,
